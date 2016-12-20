@@ -125,3 +125,7 @@ Route::get('statistics/games_users',                             'StatisticContr
 Route::post('statistics/games_users_ajax',                       'StatisticController@game_user_ajax');
 Route::get('statistics/points',                                 'StatisticController@point');
 Route::post('statistics/points_ajax',                           'StatisticController@point_ajax');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

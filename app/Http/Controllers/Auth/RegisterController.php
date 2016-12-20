@@ -66,6 +66,16 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+            'rid' => 1,
+            'status' => 1,
+            'created' => time(),
+            'updated' => time(),
+        ]);        
+    
+  //      return User::create([
+  //          'name' => $data['name'],
+  //          'email' => $data['email'],
+  //          'password' => bcrypt($data['password']),
+  //      ]);
     }
 }
